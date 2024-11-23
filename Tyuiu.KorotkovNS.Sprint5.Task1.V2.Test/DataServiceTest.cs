@@ -8,7 +8,7 @@ namespace Tyuiu.KorotkovNS.Sprint5.Task1.V2.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\Users\Nikita\AppData\Local\Temp\OutPutFileTask0.txt";
+            string path = @"C:\Users\Nikita\AppData\Local\Temp\OutPutFileTask1.txt";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;

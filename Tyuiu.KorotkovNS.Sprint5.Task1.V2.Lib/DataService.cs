@@ -6,7 +6,7 @@ namespace Tyuiu.KorotkovNS.Sprint5.Task1.V2.Lib
     {
         public string SaveToFileTextData(int startValue, int stopValue)
         {
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask1.txt");
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
@@ -23,11 +23,7 @@ namespace Tyuiu.KorotkovNS.Sprint5.Task1.V2.Lib
                 y = Math.Round(((2 * x - 3) / (Math.Cos(x) - 2 * x))+5*x-6, 2);
                 strY = Convert.ToString(y);
 
-                if (x == 0)
-                {
-                    File.AppendAllText(path, "0" + Environment.NewLine);
-                    
-                }
+
                 if (x != stopValue)
                 {
                     File.AppendAllText(path, strY + Environment.NewLine);
